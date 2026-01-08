@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta atrás 🎂</title>
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla 1: Contador -->
+    <div class="container" id="countdown-screen">
+        <h1 id="title">Tu regalo se va a desbloquear en...</h1>
+        
+        <div id="countdown">
+            <div><span id="days">0</span> días</div>
+            <div><span id="hours">0</span> horas</div>
+            <div><span id="minutes">0</span> minutos</div>
+            <div><span id="seconds">0</span> segundos</div>
+        </div>
+
+        <h1 id="title">Mientras tanto escucha algo 🙃</h1>
+
+        <div id="music-player">
+            <p id="song-name">🎵 Canción</p>
+            <div class="music-controls">
+                <button id="prev-song">⏮</button>
+                <button id="next-song">⏭</button>
+            </div>
+            <audio id="audio-player"></audio>
+        </div>
+
+        <img src="img/gif.gif" id="corner-gif" alt="music gif">
+        <div id="corner-text">⚠️Aviso: Todas las canciones que escuches las puse únicamente porque te gusta Morat :u </div>
+    </div>
+
+    <!-- Pantalla 2: Mensaje de cumpleaños -->
+    <div class="hidden" id="birthday-screen">
+        <h1 id="birthday-title">🎉 ¡Feliz Cumpleaños! 🎉</h1>
+        
+        <div class="messages-container">
+            <div class="message-box box-1">
+                <div class="box-icon">🎂</div>
+                <p>
+                    Espero que hoy tengas un día increíble lleno de sonrisas,
+                    momentos bonitos y mucha felicidad 💖
+                </p>
+            </div>
+
+            <div class="message-box box-2">
+                <div class="box-icon">🎁</div>
+                <p>
+                    Que este nuevo año de vida esté lleno de viajes,
+                    logros y experiencias maravillosas ✨
+                </p>
+            </div>
+
+            <div class="message-box box-3">
+                <div class="box-icon">🌟</div>
+                <p>
+                    Eres una persona especial y te mereces todo lo mejor.
+                    ¡Que se cumplan todos tus deseos! 🎈
+                </p>
+            </div>
+
+            <div class="message-box box-4">
+                <div class="box-icon">💝</div>
+                <p>
+                    Gracias por haber sido parte de mi vida y por todos los momentos
+                    compartidos. ¡Feliz vuelta al sol! 🌞
+                </p>
+            </div>
+        </div>
+
+        <div id="birthday-music">
+            <audio id="birthday-audio" loop>
+                <source src="music/Diomedes Díaz - Tu Cumpleaños.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <div class="photo-hint">💡 Haz clic en las fotos para leer un mensaje</div>
+
+        <div class="images">
+            <div class="photo-card">
+                <div class="photo-inner">
+                    <div class="photo-front">
+                        <img src="img/foto1.jpeg" alt="Foto 1">
+                    </div>
+                    <div class="photo-back">
+                        <p>📸 Cada momento contigo queda grabado en el corazón. Cada foto cuenta una historia única y especial 💕</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <div class="photo-inner">
+                    <div class="photo-front">
+                        <img src="img/foto2.jpeg" alt="Foto 2">
+                    </div>
+                    <div class="photo-back">
+                        <p>🌈 Los recuerdos más bonitos son aquellos que compartimos con las personas que más queremos, como contigo. Gracias por
+                             ser mi motivación para el intercambio, gracias a eso me quedo con una
+                             de las experiencias más lindas de mi vida🎨</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <div class="photo-inner">
+                    <div class="photo-front">
+                        <img src="img/foto3.jpeg" alt="Foto 3">
+                    </div>
+                    <div class="photo-back">
+                        <p>Perdón por todo lo que pasó, entiendo tú odio y entiendo si nunca me vuelves a hablar, me duele perderte pero tampoco puedo obligarte a que te quedes y no puedo insistir más 😕. Tú sabes lo mucho que significas para mí y que nunca haría algo para lastimarte y sabes que incluso sería capaz de lastimarme a mí mismo con tal de verte bien.
+                             Perdón por dejarte sola aquel día, no quería hacerlo pero tampoco entendía porqué querías que estuviera contigo y me abrumé, pero no busco convencerte,
+                             elegiste irte y está bien. Espero seas feliz y espero que todo te salga muy bien,
+                             tienes mi apoyo desde lejos 💚. Asegurarte de estar con alguien que te valore y que no te haga llorar,
+                             porque eso tampoco está bien 😣, no vale la pena llorar por alguien que no merece tu amor. Siempre serás la persona con la que quise todo
+                             y no pude tener nada, siempre serás mi debilidad y siempre vas a poder contar conmigo. Te quiero muuuuuucho, ten una linda vida 🥰.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
